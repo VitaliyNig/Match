@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI timerUI;
     private float timer;
+    public bool activeTimer = true;
 
     private void Start()
     {
@@ -16,7 +17,7 @@ public class Timer : MonoBehaviour
 
     public void StopTimer()
     {
-        StopCoroutine(UpdateTimer());
+        activeTimer = false;
     }
 
     private IEnumerator UpdateTimer()
@@ -24,6 +25,9 @@ public class Timer : MonoBehaviour
         timer += Time.deltaTime;
         timerUI.text = TimeSpan.FromSeconds(timer).ToString("mm':'ss");
         yield return null;
-        StartCoroutine(UpdateTimer());
+        if (activeTimer == true)
+        {
+            StartCoroutine(UpdateTimer());
+        }
     }
 }

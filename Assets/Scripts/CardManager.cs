@@ -10,6 +10,8 @@ public class CardManager : MonoBehaviour
     private Transform cardGrid;
     [SerializeField]
     private TextMeshProUGUI numberStepUI;
+    [SerializeField]
+    private GameObject gameOverUI;
 
     private const string modeKey = "GameMode";
     private Color matchBlack;
@@ -121,6 +123,14 @@ public class CardManager : MonoBehaviour
         if (cardGrid.GetComponentsInChildren<Button>().Length == 0)
         {
             Debug.Log("GameOver");
+            GameObject.Find("EventScripts").GetComponent<Timer>().StopTimer();
+            gameOverUI.SetActive(true);
+            foreach (var i in cardGrid.GetComponentsInChildren<Image>())
+            {
+                var tempColor = i.color;
+                tempColor.a = 0.12f;
+                i.color = tempColor;
+            }
         }
     }
 }
