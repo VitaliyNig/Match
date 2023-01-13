@@ -4,6 +4,7 @@ using TMPro;
 
 public class CardCheck : MonoBehaviour
 {
+    private const string modeKey = "GameMode";
     private Color matchBlack;
     private Color matchYellow;
     private Color matchGreen;
@@ -25,8 +26,8 @@ public class CardCheck : MonoBehaviour
         cardGO = this.gameObject;
         GameObject.Find("EventScripts").GetComponent<CardManager>().GetCardMatching(cardGO);
         string[] cardCode = cardGO.name.Split(' ');
-        
         cardGO.GetComponentInChildren<TextMeshProUGUI>().text = cardCode[0].ToString();
+        
         switch (cardCode[1])
         {
             case "R":

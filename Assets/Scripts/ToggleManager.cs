@@ -6,16 +6,16 @@ public class ToggleManager : MonoBehaviour
 {
     private const string modeKey = "GameMode";
     private const string numberKey = "NumberCards";
-    private string tagGO;
-    private Toggle[] toggles;
     private Color matchBlack;
     private Color matchWhite;
+    private Toggle[] toggles;
+    private string tagGO;
 
     private void Awake()
     {
         ColorUtility.TryParseHtmlString("#1E1E1E", out matchBlack);
         ColorUtility.TryParseHtmlString("#FFFFFF", out matchWhite);
-
+        
         if (!PlayerPrefs.HasKey(modeKey))
         {
             PlayerPrefs.SetInt(modeKey, 0);

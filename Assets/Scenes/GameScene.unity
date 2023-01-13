@@ -488,6 +488,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1019823809}
+  - component: {fileID: 1019823813}
   - component: {fileID: 1019823810}
   - component: {fileID: 1019823811}
   - component: {fileID: 1019823812}
@@ -525,7 +526,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d26561d8b0c7c034d9c50d9841cc9877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardPrefab: {fileID: 7436115418169601899, guid: 268aea33247deae4a872bf96071d53c9, type: 3}
   cardGrid: {fileID: 931146084}
   numberStepUI: {fileID: 1024624371}
 --- !u!114 &1019823811
@@ -553,6 +553,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5465cc951cd51d244aa80c1e3599fe98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1019823813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019823808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8de9a4df16d58b408b0dccad917640f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardPrefab: {fileID: 7436115418169601899, guid: 268aea33247deae4a872bf96071d53c9, type: 3}
+  cardGrid: {fileID: 931146084}
 --- !u!1 &1024624369
 GameObject:
   m_ObjectHideFlags: 0
