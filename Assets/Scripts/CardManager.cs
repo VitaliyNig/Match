@@ -12,6 +12,8 @@ public class CardManager : MonoBehaviour
     private TextMeshProUGUI numberStepUI;
     [SerializeField]
     private GameObject gameOverUI;
+    [SerializeField]
+    private AudioClip audioClip;
 
     private const string modeKey = "GameMode";
     private Color matchBlack;
@@ -104,6 +106,10 @@ public class CardManager : MonoBehaviour
             t.GetComponent<Image>().color = matchBlack;
         }
         tempCardGO.Clear();
+        
+        AudioSource audioSource = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioSource>();
+        audioSource.clip = audioClip;
+        audioSource.Play();
 
         foreach (var b in cardGrid.GetComponentsInChildren<Button>())
         {

@@ -24,10 +24,7 @@ public class ToggleManager : MonoBehaviour
         {
             PlayerPrefs.SetInt(numberKey, 0);
         }
-    }
 
-    private void Start()
-    {
         GameObject thisGO = this.gameObject;
         toggles = thisGO.GetComponentsInChildren<Toggle>();
         tagGO = thisGO.tag;

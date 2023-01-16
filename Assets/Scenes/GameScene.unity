@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 193270739}
   - component: {fileID: 193270738}
   - component: {fileID: 193270737}
+  - component: {fileID: 193270740}
   m_Layer: 5
   m_Name: ButtonBack
   m_TagString: Untagged
@@ -219,6 +220,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 193270740}
+        m_TargetAssemblyTypeName: AudioPlaySFX, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: f302c46ad355ba54d8dce9feb7981b80, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &193270738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,6 +270,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 193270735}
   m_CullTransparentMesh: 1
+--- !u!114 &193270740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193270735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d8eb5f3c441654bb8f2a043e536005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,6 +555,7 @@ GameObject:
   - component: {fileID: 1019823810}
   - component: {fileID: 1019823811}
   - component: {fileID: 1019823812}
+  - component: {fileID: 1019823814}
   m_Layer: 0
   m_Name: EventScripts
   m_TagString: Untagged
@@ -567,6 +593,7 @@ MonoBehaviour:
   cardGrid: {fileID: 931146084}
   numberStepUI: {fileID: 1024624371}
   gameOverUI: {fileID: 571096605}
+  audioClip: {fileID: 8300000, guid: 43fb25b5f5931ed4d81391b792e10c76, type: 3}
 --- !u!114 &1019823811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -607,6 +634,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardPrefab: {fileID: 7436115418169601899, guid: 268aea33247deae4a872bf96071d53c9, type: 3}
   cardGrid: {fileID: 931146084}
+--- !u!114 &1019823814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019823808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a44a2100fb565347bc98f8fcc39a14d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1024624369
 GameObject:
   m_ObjectHideFlags: 0
@@ -1341,6 +1380,7 @@ GameObject:
   - component: {fileID: 1921702755}
   - component: {fileID: 1921702754}
   - component: {fileID: 1921702753}
+  - component: {fileID: 1921702756}
   m_Layer: 5
   m_Name: ButtonRestart
   m_TagString: Untagged
@@ -1425,6 +1465,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1921702756}
+        m_TargetAssemblyTypeName: AudioPlaySFX, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: f302c46ad355ba54d8dce9feb7981b80, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1921702754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1463,6 +1515,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1921702751}
   m_CullTransparentMesh: 1
+--- !u!114 &1921702756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921702751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d8eb5f3c441654bb8f2a043e536005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2010928740
 GameObject:
   m_ObjectHideFlags: 0

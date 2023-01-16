@@ -23,7 +23,15 @@ public class CardGenerator : MonoBehaviour
     private void Generator()
     {
         //Generator
-        int maxValue = 30;
+        int maxValue = PlayerPrefs.GetInt(numberKey) switch
+        {
+            int i when i == 0 => 5,
+            int i when i == 1 => 10,
+            int i when i == 2 => 15,
+            int i when i == 3 => 20,
+            int i when i == 4 => 25,
+            _ => 25
+        };
         while (cardList.Count < PlayerPrefs.GetInt(numberKey) switch
         {
             int i when i == 0 => 10,
